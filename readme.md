@@ -34,7 +34,7 @@ edit($msg_id, $object, $type, $content, $buttons = null)
 
 #### 函数签名：
 ```php
-set_board($type, $content, $is_all = true, $object)
+set_board($type, $content, $is_all = true, $object = null)
 ```
 
 #### 参数：
@@ -52,7 +52,7 @@ set_board($type, $content, $is_all = true, $object)
 
 #### 函数签名：
 ```php
-unset_board($is_all = true, $object)
+unset_board($is_all = true, $object = null)
 ```
 
 #### 参数：
