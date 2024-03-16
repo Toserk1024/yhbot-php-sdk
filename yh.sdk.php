@@ -60,8 +60,8 @@ function make_content($type, $content, $buttons) {
     } elseif ($type == 'image') {
         $data['content']['imageUrl'] = $content;
     } elseif ($type == 'file') {
-        $data['content']['fileName'] = $content['file_name'];
-        $data['content']['fileUrl'] = $content['file_url'];
+        $data['content']['fileName'] = $content['name'];
+        $data['content']['fileUrl'] = $content['url'];
     } else {
         echo "无效的数据类型{$type}";
         exit;
