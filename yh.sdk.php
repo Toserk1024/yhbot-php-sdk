@@ -73,7 +73,7 @@ function make_content($type, $content, $buttons) {
 }
 
 //看板设置函数
-function set_board($type, $content, $is_all = true, $object) {
+function set_board($type, $content, $is_all = true, $object = null) {
     $data = array();
     if ($is_all) {
         $tool = 'board-all';
@@ -93,12 +93,12 @@ function set_board($type, $content, $is_all = true, $object) {
 }
 
 //看板取消设置函数
-function unset_board($is_all = true, $object) {
+function unset_board($is_all = true, $object = null) {
     $data = array();
     if ($is_all) {
-        $tool = 'board-dismiss';
+        $tool = 'board-all-dismiss';
     } else {
-        $tool = 'board-dismiss-all';
+        $tool = 'board-dismiss';
         $data['recvId'] = $object['id'];
         $data['recvType'] = $object['type'];
     }
